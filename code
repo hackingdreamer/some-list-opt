@@ -2,6 +2,9 @@ print("Welcome to our program")
 print("Enter key 1 for traverse the list ")
 print("Enter key 2 for add items in list ")
 print("Enter key 3 for remove items in list")
+print("Enter key 4 for Join two list")
+print("Enter key 5 for Append two list")
+print("Enter key 6 for Extend two list")
 a=int(input("Enter the number "))
 
 if(a==1):
@@ -9,6 +12,7 @@ if(a==1):
     print("all items of the list: ")
     for items in mylist:
         print(item)
+    break;
     
 elif(a==2):
     fruits=["APPLE","CHERRY","DRAGON FRUIT"]
@@ -16,11 +20,32 @@ elif(a==2):
     fruits.insert(1,"BANANA")
     print("\nfruits (after insert()): ")
     print(fruits)
+    break;
 elif(a==3):
     mylist=["i phone","mi","vivo","oneplus","oppo"]
     print("List content : ", mylist)
     mulist.remove("vivo")
     print("List content (after remove()) :", mylist)
+    break;
+elif(a==4):
+    list1 = ["a", "b" , "c"]
+    list2 = [1, 2, 3]
+    list3 = list1 + list2
+    print(list3)
+    break;
+elif(a==5):
+    list1 = ["a", "b" , "c"]
+    list2 = [1, 2, 3]
+    for x in list2:
+        list1.append(x)
+        print(list1)
+    break;
+elif(a==6):
+   list1 = ["a", "b" , "c"]
+   list2 = [1, 2, 3]
+   list1.extend(list2)
+   print(list1)
+   break;
 else:
     print("You choose wrong key")
              
