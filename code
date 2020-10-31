@@ -1,6 +1,7 @@
 print("Welcome to our program")
 print("Enter key 1 for traverse the list ")
 print("Enter key 2 for add items in list ")
+print("Enter key 3 for remove items in list")
 a=int(input("Enter the number "))
 
 if(a==1):
@@ -15,7 +16,12 @@ elif(a==2):
     fruits.insert(1,"BANANA")
     print("\nfruits (after insert()): ")
     print(fruits)
+elif(a==3):
+    mylist=["i phone","mi","vivo","oneplus","oppo"]
+    print("List content : ", mylist)
+    mulist.remove("vivo")
+    print("List content (after remove()) :", mylist)
 else:
-    print("u choose wrong key")
+    print("You choose wrong key")
              
 
